@@ -1,12 +1,10 @@
-C275 Assignment 1 Part 2
-
-by:
-Hammad Jutt, Section EB1
-Shivansh Singla, Section EB1
+By:
+Hammad Jutt
+Shivansh Singla
 
 1. DESCRIPTION:
 
-This Assignment consists of two programs: client.cpp which is to be run on the arduino board, and server.py which is to be run on the computer the arduino board is connected to.
+This project consists of two programs: client.cpp which is to be run on the arduino board, and server.py which is to be run on the computer the arduino board is connected to.
 
 The client (arduino) will be able to select two points on a map of edmonton using a joystick. It will then send the latitude and longitude coordinates of these points over the serial port to the python server (server.py). The server will receive the coordinates of these two points by reading off the serial port and will calculate the shortest path between them based on data of Edmonton roads. It will then send the information for this shortest path back over the serial port to the arduino, waiting for aknowledgement of data receipt for each waypoint in the path. The arduino will then take this shortest path data and draw it onto the map.
 
@@ -23,10 +21,4 @@ When both programs are running (client.cpp on arduino and server.py on the compu
 ****NOTE****
 If an error is displayed when running server.py, simply re-run server.py 
 If error persists, restart interpreter and run server.py twice
-
-
-3. CREDIT
-
-All functions in graph_v2.py were taken from eClass. All code in path_functions.py was written by us. Every other file was taken from eClass and modified as per the assignment requirements. The serial_readline function was modified to work with timeouts.
-
 
